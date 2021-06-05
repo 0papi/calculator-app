@@ -12,7 +12,7 @@ function printValue(val) {
   let displayOuput = document.querySelector('#calculator-screen');
   let currentOutput = displayOuput.value;
 
-  if(displayOuput.value == "") {
+  if(displayOuput.value == "0") {
     if(val !="RESET" && val != "DEL") {
       displayOuput.value = "";
       displayOuput.value += val;
