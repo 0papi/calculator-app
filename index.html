@@ -23,7 +23,7 @@
     <h1>Calc</h1>
     <div class="calculator-items">
       <div class="display-path">
-        <input type="number" class="form-control" id="result-path" disabled />
+        <input type="text" value="" id="calculator-screen" disabled />
       </div>
       <div class="calculator-body flex">
         <div class="row row-one">
@@ -37,7 +37,7 @@
             <button class="key">9</button>
           </div>
           <div>
-            <button class="bg-dark-blue" id="delete-items" data-action="delete">DEL</button>
+            <button class="bg-dark-blue delete-items" id="delete-items" data-action="delete">DEL</button>
           </div>
         </div>
         <div class="row row-two">
@@ -51,7 +51,7 @@
             <button class="key">6</button>
           </div>
           <div>
-            <button class="key" data-action="add">+</button>
+            <button class="key operator" data-action="add">+</button>
           </div>
         </div>
         <div class="row row-three">
@@ -65,26 +65,26 @@
             <button class="key">3</button>
           </div>
           <div>
-            <button class="key" data-action="subtract">-</button>
+            <button class="key operator" data-action="subtract">-</button>
           </div>
         </div>
         <div class="row row-four">
           <div>
-            <button class="key" data-action="decimal">.</button>
+            <button class="key decimal" data-action="decimal">.</button>
           </div>
           <div>
             <button class="key">0</button>
           </div>
           <div>
-            <button class="key" data-action="divide">\</button>
+            <button class="key operator" data-action="divide">\</button>
           </div>
           <div>
-            <button class="key" data-action="multiply">x</button>
+            <button class="key operator" data-action="multiply">*</button>
           </div>
         </div>
         <div class="row row-five">
           <button class="reset-items bg-dark-blue" data-action="clear">RESET</button>
-          <input type="submit" value="=" id="equalto" class="equalto-item" data-action="calculate"/>
+          <button class="equalto-item">=</button>
         </div>
       </div>
     </div>
@@ -103,6 +103,6 @@
   </div>
 
 
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
