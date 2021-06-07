@@ -20,18 +20,34 @@
 </head>
 <body>
   <div class="container">
-    <h1>Calc</h1>
+    <div class="calculator-header">
+      <div class="title">
+        <h1>Calc</h1>
+      </div>
+      <div class="theme-bar">
+        <div class="numbering">
+          <span class="number">1</span>
+          <span class="number">2</span>
+          <span class="number">3</span>
+        </div>
+        <div class="theme-field">
+          <h6>THEME</h6>
+          <range class="progress-bar"></range>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
     <div class="calculator-items">
       <div class="display-path">
-        <input type="text" value="0" id="calculator-screen" disabled />
+        <input type="text" value="0" id="calculator-screen" class="display-out" disabled />
       </div>
       <div class="calculator-body flex">
         <div class="row row-one">
           <div>
-            <button class="key">7</button>
+            <button class="key keyboard-key">7</button>
           </div>
           <div> 
-            <button class="key">8</button>
+            <button class="key keyboard-key">8</button>
           </div>
           <div>
             <button class="key">9</button>
@@ -82,7 +98,7 @@
             <button class="key operator" data-action="multiply">*</button>
           </div>
         </div>
-        <div class="row row-five">
+        <div class="row-five">
           <button class="reset-items bg-dark-blue" data-action="clear">RESET</button>
           <button class="equalto-item">=</button>
         </div>
