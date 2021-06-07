@@ -257,7 +257,11 @@ input[type="text"]{
     margin: 2em auto;
   }
 
-  .key {
+
+  .row {
+    grid-gap: 1em;
+  }
+   .key {
     width: 120px;
     height: 90px;
   }
