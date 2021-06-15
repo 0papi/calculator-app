@@ -143,6 +143,9 @@ h1 {
 	border: none;
 	border-radius: 100vh;
 	cursor: pointer;
+	transform: translateX(0);
+
+	transition: transform .25s ease-in-out; /*add some transition to the circle theme changer*/
 }
 
 input[type='text'] {
@@ -250,4 +253,65 @@ input[type='text'] {
 		font-size: 1.9rem;
 		margin-left: 0.2em;
 	}
+}
+
+/*THEMES ========================================================================================================================================= */ 
+
+
+.light-theme{
+	background: var(--Light-gray-main-background);
+	color: #000000;
+}
+
+.light-theme .calculator-body, .light-theme .progress-bar{
+	background: var(--Grayish-red);
+}
+
+.light-theme .display-out{
+	background: var(--Very-light-gray);
+}
+
+.light-theme .delete-items{
+	background: var(--Very-dark-cyan);
+}
+
+.light-theme .reset-items{
+	background: var(--Dark-moderate-cyan);
+}
+
+.light-theme .equalto-item{
+	background: var(--Orange-key-background);
+}
+
+.light-theme .circle{
+	transform: translateX(20px);
+}
+
+
+
+.purple-theme{
+	background: var(--Very-dark-violet-main-background);
+	color: var(--Light-yellow);
+}
+
+.purple-theme .calculator-body, .purple-theme .display-out, .purple-theme .progress-bar{
+		background: var(--Very-dark-violet);	
+}
+
+.purple-theme .delete-items{
+	background: var(--Vivid-magenta-key-shadow);
+	box-shadow: 3px 3px var(--Vivid-magenta-key-shadow);
+}
+
+.purple-theme .reset-items{
+	background: var(--Vivid-magenta-key-shadow);
+}
+
+.purple-theme .equalto-item{
+	background: var(--Pure-cyan);
+	color: #000000;
+}
+
+.purple-theme .circle{
+	transform: translateX(50px);
 }
